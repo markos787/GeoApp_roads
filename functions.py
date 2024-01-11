@@ -109,10 +109,3 @@ def get_coordinates(address):
     latitude = data[0]["lat"]
     longitude = data[0]["lon"]
     return [latitude, longitude]
-
-
-
-#  TODO - logowanie (if, else), CRUD dla listy prac drogowych, CRUD dla listy pracowników z wszystkich miejsc gdzie są prowadzone prace drogowe, CRUD dla listy pracowników wybranym miejscu gdzie prowadzone są prace  remontowe
-#  TODO - GUI - mapa wszystkich remontowanych odcinków, mapa wszystkich pracowników, mapa pracowników wybranego remontowanego odcinka
-#  TODO - okodowanie wszystkich funkcjonalności
-#  TODO - po wysłaniu projektu iść go obronić jak Częstochowę
