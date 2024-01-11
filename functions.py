@@ -6,7 +6,7 @@ import folium
 db_params=ps.connect(
     database='postgres',
     user='postgres',
-    password='Geodeta102!',
+    password='***********',
     host='localhost',
     port=5433
 )
