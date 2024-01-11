@@ -109,3 +109,5 @@ def get_coordinates(address):
     latitude = data[0]["lat"]
     longitude = data[0]["lon"]
     return [latitude, longitude]
+
+#  TODO - po oddaniu projektu iść go bronić jak Częstochowy
