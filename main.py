@@ -7,7 +7,7 @@ import math
 db_params=ps.connect(
     database='postgres',
     user='postgres',
-    password='***********',
+    password='Geodeta102!',
     host='localhost',
     port=5433
 )
@@ -722,8 +722,8 @@ def logowanie(event=None):
                     koniec=get_coordinates(row[2])
                     odc_coords=(start, koniec)
                     tuples_coords.append(odc_coords)
-                    marker_1=mapa.set_marker(start[0], start[1], text=f'{row[1]}\n', font=('Arial', 10, 'bold'), text_color='black')
-                    marker_2=mapa.set_marker(koniec[0], koniec[1], text=f'{row[2]}\n', font=('Arial', 10, 'bold'), text_color='black')
+                    marker_1=mapa.set_marker(start[0], start[1], text=f'{row[1]}', font=('Arial', 10, 'bold'), text_color='black')
+                    marker_2=mapa.set_marker(koniec[0], koniec[1], text=f'{row[2]}', font=('Arial', 10, 'bold'), text_color='black')
                     mapa.set_path([marker_1.position, marker_2.position], color='red', width=4)
 
             def mapa_pracowicy():
@@ -807,7 +807,7 @@ def logowanie(event=None):
             entry_mapa_odc_start.grid(row=5, column=0, padx=50, sticky=W)
             label_mapa_odc_koniec.grid(row=6, column=0, sticky=W)
             entry_mapa_odc_koniec.grid(row=6, column=0, padx=50, sticky=W)
-            button_mapa_pracownicy_remontu.grid(row=6, column=1, sticky=E)
+            button_mapa_pracownicy_remontu.grid(row=5, column=1, rowspan=2, sticky=E)
 
             root_mapa.mainloop()
 
