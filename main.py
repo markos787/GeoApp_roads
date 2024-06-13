@@ -7,9 +7,9 @@ import math
 db_params=ps.connect(
     database='postgres',
     user='postgres',
-    password='Geodeta102!',
+    password='***********',
     host='localhost',
-    port=5433
+    port=5432
 )
 cursor=db_params.cursor()
 

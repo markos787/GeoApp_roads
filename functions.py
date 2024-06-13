@@ -8,7 +8,7 @@ db_params=ps.connect(
     user='postgres',
     password='***********',
     host='localhost',
-    port=5433
+    port=5432
 )
 cursor=db_params.cursor()
 
