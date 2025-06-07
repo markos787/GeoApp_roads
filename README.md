@@ -1,0 +1,1 @@
+# The project is an desktop app for the roads management system. Geospatial services are provided by OpenMapServices and data connection is possible due to the connection to PostgreSQL database with PostGIS extension.
